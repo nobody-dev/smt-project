@@ -1,0 +1,681 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/screen.css" type="text/css" rel="stylesheet">
+    <meta name="description"
+          content="Автоматы для  ремонта и поверхностного монтажа электроники.">
+    <meta name="keywords"
+          content="Автоматы для  ремонта и поверхностного монтажа электроники.">
+    <title>Карта проектов</title>
+    
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(16633729, "init", {
+        id:16633729,
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/16633729" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+
+<!--<link href="/css/template.css" rel="stylesheet" type="text/css"/>-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="https://smttech.ru/ckeditor/ckeditor.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://smttech.ru/ckeditor/lang/ru.js?t=C6HH5UF"></script>
+<script src="https://code.jquery.com/ui/1.8.22/jquery-ui.min.js" type="text/javascript"></script>
+<!-- FANCYBOX -->
+<script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.2.1.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="../js/fancybox/jquery.fancybox.css" media="screen"/>
+
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		var x = parseInt($(window).width()) / 2 - 445;
+		$('.se_wrapper').css('left', x + 'px');
+		$('.se_link').click(function () {
+				$('.se_overlay').fadeIn(500);
+				$('.se_wrapper').fadeIn(200);
+			}
+		);
+		$('.es_close a').click(function () {
+				$('.se_overlay').fadeOut(300);
+				$('.se_wrapper').fadeOut(100);
+			}
+		);
+		$('.es_rb').click(function () {
+			$('.es_pick').removeClass('gray');
+			$(this).parent().parent().addClass('gray');
+		});
+		//function(){$('.es_pick').removeClass('gray'); $(this).addClass('gray');}
+	});
+</script>
+<script>
+	$('.input').focus(function () {
+		if (this.value == this.title) {
+			this.value = ""
+		}
+	});
+	//////////
+	$('.input').blur(function () {
+		if (this.value == "") {
+			this.value = this.title
+		}
+	});
+</script>
+<script type="text/javascript" src="../js/dragdrop.js"></script>
+
+<!-- скрипт плавного перехода к ссылкам-->
+<script type="text/javascript">
+	$(document).ready(function () {
+		$("a.scroll").click(function () {
+			elementClick = $(this).attr("href");
+			destination = $(elementClick).offset().top;
+			if ($.browser.safari) {
+				$('body').animate({scrollTop: destination}, 1100);
+			} else {
+				$('html').animate({scrollTop: destination}, 1100);
+			}
+			return false;
+		});
+	});
+</script>
+<body class="">
+<!--start header-->
+<!-- Google Analytics counter  -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123510311-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123510311-1');
+</script>
+<!-- /Google Analytics counter -->
+
+<header class="header">
+    <div class="container group"><a href="../index.html" class="header__logo"><img src="images/logo.png"
+                                                                       alt="СМТ технологии"
+                                                                       class="img-responsive"></a>
+        <nav class="header__nav">
+            <ul>
+				<li><a href="../index.html#search__block">Каталог</a></li>
+                <li><a href="../page/about.html">Компания</a></li>
+                <li><a href="../news.html">Новости</a></li>
+<!--                <li><a href="/page/faq">FAQ</a></li>-->
+                <li><a href="../page/partners.html">Партнеры</a></li>
+                <li><a href="map_project.html">Проекты</a></li>
+                <li><a href="../cat/actions.html">Акции</a></li>
+                <li><a href="../page/contacts.html">Контакты</a></li>
+                
+								            </ul>
+        </nav>
+        <a href="#" class="header__show-menu visible-sm-block visible-xs-block"><span></span><span></span><span></span></a>
+		<div class="header__languages">
+			<a href="../page/english.html">eng</a> /
+			<a href="../index.html" >rus</a>
+		</div>
+
+		<div class="header__contacts">
+            <p class="header__phone"><a href="tel:88007758326">8 800 775 83 26</a></p>
+            <p class="header__phone"><a href="tel:84993222025">8 499 322 20 25</a></p>
+            <p class="header__email"><a href="mailto:info@smttech.ru">info@smttech.ru</a></p>
+        </div>
+    </div>
+</header>
+<!--finish header-->
+
+
+
+<!--start search-->
+<div id="search__block" class="search-block">
+    <div class="container group">
+        <form class="search-block__form relative" method="get" action="map_project.html">
+            <input required type="search" name="string" placeholder="Это поиск: что будем искать?" value="">
+            <button type="submit"></button>
+        </form>
+    </div>
+</div>
+<!--finish search-->
+
+
+
+		
+	
+
+
+<div class="static-page">
+    <div class="container group">
+		<div class="breadcrumbs">
+	<a href="../index.html">Главная</a>
+						<span>Карта проектов</span>
+			</div>
+        <h1>Карта проектов</h1>
+        <p>
+		    <div>
+	<iframe height="480" src="https://www.google.com/maps/d/u/3/embed?mid=1v05KO1N-W4CDegDMBjp_RZX7TH4Omi22" width="100%"></iframe></div>
+        </p>
+        <hr>
+        <p>
+		    <p>
+	<style type="text/css">th{
+		text-align: center;
+		font-weight: bold;
+		font-size: 1.3em;
+		background: #aaa;
+	}
+	th, td{
+		padding: 10px;
+		/* font-weight: bold; */
+		font-size: 1.3em;
+	}
+	tr:nth-child(2n+3){
+		background-color: #eee;
+	}
+
+	img{
+		border-radius: 10px;
+	}	</style>
+</p>
+<div class="news-page__list group">
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Саратов</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/1min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Промышленная электроника, системы электрозащиты</a></p>
+		<!--noindex-->
+		<div class="news-page__single-intro">Оснащение сборочного участка средней производительности под ключ</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Новосибирск</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/2min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Крупнейший российский производитель телекоммуникационного и сетевого оборудования</a></p>
+		<!--noindex-->
+		<div class="news-page__single-intro">2 установки 3D АОИ Pemtron 8800: отдельностоящая и в составе автоматической линии.</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Казань</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/3-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Производство медицинских симуляторов</a></p>
+		<div class="news-page__single-intro">Автоматическая сборочная линия производительностю до 30 000 комп/час</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Москва</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/4-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Контрактное производство</a></p>
+		<!--noindex-->
+		<div class="news-page__single-intro">Две автоматические сборочные линии производительностью до 70 000 комп/час каждая</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Москва</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/5-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Разработчик и производитель телекоммуникационного оборудования</a></p>
+		<!--noindex-->
+		<div class="news-page__single-intro">Установщик компонентов, 3D АОИ Pemron 8800TL, Паяльный робот H351, Принтер STP-550</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Санкт-Петербург</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/6-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Разработка и производство технических средств охранной сигнализации</a></p>
+		<div class="news-page__single-intro">Сборочный участок производительностью до 40 000 комп/час</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Зеленоград</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/7-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Производитель высокотехнологичных изделий для локации и связи для ракетно-космической отрасли</a></p>
+		<!--noindex-->
+		<div class="news-page__single-intro">Два установщика SM суммарной производительностью до 70 000 комп/час</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Саратов</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/8-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Производитель, выпускающий сетевое оборудование, компьютерную технику.</a></p>
+		<!--noindex-->
+		<div class="news-page__single-intro">Данная система уже хорошо зарекомендовала себя на многих европейских производствах в качестве надежного и экономичного аппарата отмывки печатных узлов.</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Белгород</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/9-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Разработчик и производитель систем освещения для сельского хозяйства</a></p>
+		<div class="news-page__single-intro">Автоматическая сборачная линия LED светильников производительностью до 25 000 комп/час</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Рязань</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/10-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Производитель телекоммуникационного оборудования</a></p>
+		<div class="news-page__single-intro">Сборочная линия KAYO производительностью до 13 000 комп/час</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Волгоград</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/11-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Производитель светодиодного освещения</a></p>
+		<div class="news-page__single-intro">Мелкосерийная сборочная линия Neoden производительностью до 4000 комп/час</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Екатеринбург</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/12-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Производитель светодиодного освещения</a></p>
+		<div class="news-page__single-intro">Серийная сборочная линия ELM180I производительностью до 15000 комп/час</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Братск</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/13-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Производитель автоматических охранных систем</a></p>
+		<div class="news-page__single-intro">Линия пайки волной на базе E-therm E400</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Санкт-Петербург</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/14-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Контрактное производство</a></p>
+		<div class="news-page__single-intro">Многофункциональный установщик компонентов Assembleon OpalX2</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Москва</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/15-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Контрактное производство</a></p>
+		<div class="news-page__single-intro">Автоматическая smd линия Kayo A8L+1706-3DSG + принтер HTGD 450 + печь E-therm E6</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">Московская обл., Клин</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/16-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Крупное контрактное производство</a></p>
+		<div class="news-page__single-intro">Набор конвейерных систем в SMD линию</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Орел</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/17-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Производитель драйверов для светодиодного освещения</a></p>
+		<div class="news-page__single-intro">Линия пайки волной</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Набережные Челны</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/18-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Производитель автоэлектроники и LED освещения</a></p>
+		<div class="news-page__single-intro">Среднесерийная SMD линия</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">Казахстан, г. Петропавловск</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/19-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Производитель цифрового ТВ</a></p>
+		<div class="news-page__single-intro">Мелкосерийная SMD линия на базе NEODEN4</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">Тульская обл. п. Метростроевский</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/20-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Производитель светодиодного освещения</a></p>
+		<div class="news-page__single-intro">Мелкосерийная SMD линия на базе Autotronik</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Воронеж</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/21-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Производитель блоков питания</a></p>
+		<div class="news-page__single-intro">Линия пайки волной Ersa 330</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">Крым, г. Севастополь</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/22-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Производитель высоковольтного оборудования</a></p>
+		<div class="news-page__single-intro">Мелкосерийная SMD линия на базе Autotronik BA385</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Новосибирск</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/23-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Произвотитель автосигнализаций, автомобильной электроники и систем "умный дом"</a></p>
+		<div class="news-page__single-intro">Установка 3D АОИ Pemtron 8800: в составе автоматической линии.</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Пермь</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/24-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Контрактный производитель</a></p>
+		<div class="news-page__single-intro">Среднесерийная SMD линия бюджетного класса KAYO 1706</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Ташкент</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/25-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Контрактный производитель электроники</a></p>
+		<div class="news-page__single-intro">Мелкосерийный автомат Neoden 4</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Нальчик</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/26-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Научно-исследовательский институт</a></p>
+		<div class="news-page__single-intro">Мелкосерийный настольный автомат Kayo D2V-25S</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Иваново</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/27-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Производитель систем учета энергоресурсов</a></p>
+		<div class="news-page__single-intro">Среднесерийная SMD линия, 3D АОИ Pemtron</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Казань</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/28-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Производитель оборудования для промысловых исследований на нефтяных месторождениях</a></p>
+		<div class="news-page__single-intro">Мелкосерийная SMD линия на основе установщика Autotronik BS281</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Волгоград</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/29-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Производитель светодиодного освещения</a></p>
+		<div class="news-page__single-intro">Мелкосерийная SMD линия на основе установщика Neoden4</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">Московская обл., г. Черноголовка</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/30-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Производитель систем промышленной автоматизации</a></p>
+		<div class="news-page__single-intro">Мелкосерийная SMD линия на основе установщика SMT660</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Нижний Новгород</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/31-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Производитель систем радиолокационной техники для ПВО</a></p>
+		<div class="news-page__single-intro">Мелкосерийная SMD линия на основе установщика Kayo 1706</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Зеленоград</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/32-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Контрактное производство</a></p>
+		<div class="news-page__single-intro">Автоматический принтер HTGD GD450, БУ линия Assembleon Topaz+Emerald</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Набережные Челны</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/33(1).jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Автомобильная электроника</a></p>
+		<div class="news-page__single-intro">Автоматическая сборочная линия производительностью до 30 000 комп/час</div>
+	  </div>
+	</div>
+	<div class="news-page__single">
+	  <div class="news-page__single-date map-page">
+		<time datetime="2017-02-20">г. Москва</time>
+	  </div>
+	  <div class="news-page__single-image"><a href="javascript:void(0)"></a><img src="images/34-min.jpg" alt=""></div>
+	  <div class="news-page__single-content">
+		<p class="news-page__single-title"><a href="javascript:void(0)">Производитель оптических систем</a></p>
+		<div class="news-page__single-intro">Сборочная линия KAYO производительностью
+			до 15 000 комп/час</div>
+	  </div>
+	</div>
+  </div>
+        </p>
+	
+	    	    
+    </div>
+</div>
+
+
+
+<!-- RedHelper -->
+<script id="rhlpscrtg" type="text/javascript" charset="utf-8" async="async"
+        src="https://web.redhelper.ru/service/main.js?c=smttech">
+</script>
+<!--/Redhelper -->
+
+
+<!--start footer-->
+<footer class="footer">
+    <div class="container group">
+        <div class="footer__logo"><a href="javascript:void(0)"><img src="images/logo.png" alt="СМТ технологии"
+                                                                    class="img-responsive"></a></div>
+        <div class="footer__contacts">
+            <p class="footer__phone"><a href="tel:88007758326">8 800 775-83-26</a></p>
+            <p class="footer__phone"><a href="tel:84993222025">8 499 322 20 25</a></p>
+            <!--            <p class="footer__call"><a href="#modal2" data-toggle="modal">заказать обратный звонок</a></p>-->
+        </div>
+        <nav class="footer__nav">
+            <ul>
+                <li><a href="../page/about.html">Компания</a></li>
+                <li><a href="../news.html">Новости</a></li>
+                <li><a href="../page/partners.html">Партнеры</a></li>
+                <li><a href="map_project.html">Проекты</a></li>
+                <li><a href="../page/contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+<!--finish footer-->
+<!--start modals windows-->
+<div id="modal1" class="modal-window modal fade">
+    <div class="modal-window__content"><a href="#" data-dismiss="modal" class="close"></a>
+        <div class="modal-window__title">Оставьте Ваши контактные данные, мы ответим вам в течении 60 минут</div>
+        <form method="post" action="../action.php.html">
+			<input type="name" name="sender_name" placeholder="Как к Вам обращаться?">
+            <input type="tel" name="sender_phone" placeholder="Номер телефона">
+            <input type="email" name="sender_email" placeholder="Электронная почта">
+            <button type="submit" onclick="gtag('event', 'send_2'); ym(16633729, 'reachGoal', 'send_2'); return true;">Отправить запрос</button>
+        </form>
+    </div>
+</div>
+<div id="modal2" class="modal-window modal fade">
+    <div class="modal-window__content"><a href="#" data-dismiss="modal" class="close"></a>
+        <div class="modal-window__title">Заказать звонок</div>
+        <form>
+            <input type="tel" name="phone" placeholder="Номер телефона">
+            <input type="text" name="name" placeholder="Ваше имя">
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</div>
+<div id="howmuch" class="modal-window modal fade">
+    <div class="modal-window__content"><a href="#" data-dismiss="modal" class="close"></a>
+        <div class="modal-window__title">
+            Оставьте Ваши контактные данные, мы свяжемся с Вами в течение 15 минут для уточнения технических деталей.</div>
+        <form method="post" action="../action.php.html">
+            <input type="name" name="sender_name" placeholder="Как к Вам обращаться?">
+            <input type="tel" name="sender_phone" placeholder="Номер телефона">
+            <input type="email" name="sender_email" placeholder="Электронная почта">
+            <button type="submit" onclick="gtag('event', 'push_prise_send'); ym(16633729, 'reachGoal', 'push_prise_send'); return true;">Отправить запрос</button>
+        </form>
+    </div>
+</div>
+
+
+<!--finish modals windows-->
+<script type="text/javascript" src="../js/functions.js"></script>
+
+
+<script>
+
+	$(function () {
+		$("#draggable").draggable({
+			helper: 'clone',
+			opacity: 0.5
+		});
+	});
+	$(".maincontent").droppable({
+		drop: function (event, ui) {
+			alert("!!");
+			//$(this).append(ui.draggable);
+		}
+	});
+
+
+</script>
+
+
+<noindex>
+    <script>
+		/* uptolike share begin */
+		//		(function (d, c) {
+		//			var up = d.createElement('script'),
+		//				s = d.getElementsByTagName('script')[0],
+		//				r = Math.floor(Math.random() * 1000000);
+		//			var cmp = c + Math.floor(Math.random() * 10000);
+		//			var url = window.location.href;
+		//			window["__uptolike_widgets_settings_" + cmp] = {};
+		//			d.write("<div id='" + cmp + "' class='__uptlk' data-uptlkwdgtId='" + r + "'></div>");
+		//			up.type = 'text/javascript';
+		//			up.async = true;
+		//			up.src = "//w.uptolike.com/widgets/v1/widgets.js?b=vk.fb.ok.gp.mr&id=1245146&o=1&m=1&sf=2&ss=2&sst=1&c1=ededed&c1a=0.0&c3=ff9300&c5=ffffff&mc=0&sel=1&fol=0&sel=1&scs=11&he=0&c=" + cmp + "&url=" + encodeURIComponent(url);
+		//			s.parentNode.insertBefore(up, s);
+		//		})(document, "__uptlk");
+		/* uptolike share end */
+    </script>
+</noindex>
+
+
+<!-- /подвал -->
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-11535115-7']);
+	_gaq.push(['_trackPageview']);
+
+	(function () {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+
+<!-- /UpToLike counter 
+<script async="async" src="https://w.uptolike.com/widgets/v1/zp.js?pid=1245146" type="text/javascript"></script> -->
+
+</body>
+</html>

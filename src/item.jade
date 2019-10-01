@@ -1,0 +1,297 @@
+extends ./layout/layout.jade
+block vars
+    - var bodyClass = ''
+block content
+    //start search
+    .search-block
+                .container.group
+                    form.search-block__form.relative
+                        input(type="search", name="s", placeholder="Это поиск: что будем искать?")
+                        button(type="submit")
+    //finish search
+    .item-page
+        .container.group
+            .item-page__content
+                .breadcrumbs
+                    a(href='javascript:void(0)') Главная
+                    a(href='javascript:void(0)') Оборудование
+                    a(href='javascript:void(0)') Автоматическая оптическая инспекция печатных плат (АОИ)
+                    span Цифровой инспекционный микроскоп Omni
+                h1 Цифровой инспекционный микроскоп Omni
+                .item-page__picture
+                    figure
+                        // в img вставлять маленького разрешения как на странице, а в href большое разрешение картинки
+                        a(data-fancybox="gallery" href="images/item6.jpg") 
+                            img(src="images/item6.jpg")
+                        span В наличии
+                .item-page__options
+                    table
+                        tr
+                            td Производитель
+                            td Omni
+                        tr
+                            td Модель
+                            td Omni
+                        tr
+                            td Диапазон увеличения
+                            td 2.5х - 122х (с линзами 5D)
+                        tr
+                            td Разрешение камеры
+                            td 1920х1080 пикселей
+                        tr
+                            td Соединение монитора
+                            td HDMI / DVI
+                        tr
+                            td Допонительно
+                            td Возможность измерений и сохранения изображений
+                    .item-page__options-buttons
+                        a(style="background: #002447; color: #ffffff;" href="#modal1", data-toggle="modal") Отправить запрос
+                        a(style="background: #002447; color: #ffffff;" href="#modal3", data-toggle="modal") Узнать цену
+                .clearfix
+                .item-page__tabs
+                    a.item-page__tabs_desc.item-page-tab(data-index="0" href="#anchor1").item-page__btn Описание
+                    a.item-page__tabs_galery.item-page-tab(data-index="1" href="#anchor2").item-page__btn Галерея
+                    a.item-page__tabs_spec.item-page-tab(data-index="2" href="#anchor3").item-page__btn Спецификации
+                    a.item-page__tabs_complect.item-page-tab(data-index="3" href="#anchor4").item-page__btn Базовая комплектация
+                    a.item-page__tabs_options.item-page-tab(data-index="4" href="#anchor5").item-page__btn Опции
+                    a.item-page__tabs_video.item-page-tab(data-index="5" href="#anchor6").item-page__btn Видео
+                .item-page__description.tab-content(data-index="0" id="anchor1")
+                    h2 Описание
+                    div.disc-text Цифровой микроскоп Omni входит в серию full HD (1080 пикселей) и предназначен для проведения инспекции и измерений без использования компьютера. Пользовательская платформа Omni включает в себя конфигурируемый и модернизируемый набор приложений для выполнения функций контроля и измерений. В данный набор входят совмещенный фокус, 2D-измерение, сравнение и наложение изображений, а также коррекция искажения линз.
+                    img(src="images/item7.jpg", alt="", class="img-responsive align-left")
+                    p В платформе Omni имеется мощный механизм управления обработкой изображений, который обеспечивает превосходное "живое" видео с качеством изображения full HD (60 кадров в секунду), что позволяет использовать данный микроскоп как наилучшее решение для широкого диапазона задач контроля качества продукции, тестирования, ремонта и документирования.
+                    .clearfix
+                    p GUI Omni (Графический интерфейс пользователя) является интерфейсом созданным по заказу компании. Управление интерфейсом осуществляется посредством "мыши", структура программы помогает обеспечивать интуитивную, эффективную работу и управлять полным пакетом приложений. Уникальная возможность выполнять калибровку по всему диапазону увеличения, является одной из многих функций, которые выгодно отличают Omni от других цифровых инспекционных систем
+                    p Микроскоп также оборудован функциями управления камерой (автоматическая и ручная фокусировка, выдержка, увеличение, корректировка яркости, баланс белого), которые гарантируют получение ультрарезких и высококонтрастных изображений.
+                        | Быстросъемные  бескабельные взаимозаменяемые модули освещения Omni, с регулировкой интенсивности и квадрантным управлением, обеспечивают бестеневое освещение и сокращение бликов
+                    .item-page__description-buttons
+                        a(href="javascript:void(0)") Скачать PDF
+                .item-page__galery.tab-content(data-index="1" id="anchor2")
+                    h2 Галерея
+                    .item-page__vars-block
+                        .item-page__vars__single
+                            .item-page__vars__single-image
+                                a(data-fancybox="gallery-images" href="images/option1.jpg" data-caption='Настраиваемый по высоте стол 6"x 6" или 8"x 8"')
+                                    img(src="images/option1.jpg")
+                            p Настраиваемый по высоте
+                                | стол 6"x 6" или 8"x 8"
+                        .item-page__vars__single
+                            .item-page__vars__single-image
+                                a(data-fancybox="gallery-images" href="images/option2.jpg" data-caption='Вращающийся круглый стол для инспеции под углом')
+                                    img(src="images/option2.jpg")
+                            p Вращающийся круглый стол
+                                | для инспеции под углом
+                        .item-page__vars__single
+                            .item-page__vars__single-image
+                                a(data-fancybox="gallery-images" href="images/option3.jpg" data-caption='Кольцевая светодиодная подсветка')
+                                    img(src="images/option3.jpg")
+                            p Кольцевая светодиодная
+                                | подсветка
+                        .item-page__vars__single
+                            .item-page__vars__single-image
+                                a(data-fancybox="gallery-images" href="images/option2.jpg" data-caption='Вращающийся круглый стол для инспеции под углом')
+                                    img(src="images/option2.jpg")
+                            p Вращающийся круглый стол
+                                | для инспеции под углом
+                        .item-page__vars__single
+                            .item-page__vars__single-image
+                                a(data-fancybox="gallery-images" href="images/option3.jpg" data-caption='Кольцевая светодиодная подсветка')
+                                    img(src="images/option3.jpg")
+                            p Кольцевая светодиодная
+                                | подсветка
+                div.item-page__spec.tab-content.nofloat(data-index="2" id="anchor3")
+                    h2 Спецификации
+                    p GUI Omni (Графический интерфейс пользователя) является интерфейсом созданным по заказу компании. Управление интерфейсом осуществляется посредством "мыши", структура программы помогает обеспечивать интуитивную, эффективную работу и управлять полным пакетом приложений. Уникальная возможность выполнять калибровку по всему диапазону увеличения, является одной из многих функций, которые выгодно отличают Omni от других цифровых инспекционных систем
+                    table
+                        tr
+                            td Диапазон увеличения
+                            td 2.5х - 122х (с линзами 5D)
+                        tr
+                            td Разрешение камеры
+                            td 1920х1080 пикс, 60 fps, 30х (оптич.) / 2х (цифр.)
+                        tr
+                            td Соединение монитора
+                            td HDMI / DVI
+                        tr
+                            td Требования к монитору
+                            td HD или Full HD (рекомендуется)
+                        tr
+                            td Входы/Выходы
+                            td Выход HDMI
+                                br
+                                | USB 2.0, Порт х 4
+                                br
+                                | Сетевой разъем RJ45
+                                br
+                                | Гланый порт IO x 3
+                                br
+                                | Разъем питания DC 24В
+                        tr
+                            td Захват изображения
+                            td Внутреннее сохранение изображения
+                                br
+                                | Внешнее сохранение изображения посредством USB-порта
+                                br
+                                | Сохранение изображения на ПК посредством USB-порта
+                        tr
+                            td Электропитание
+                            td 24В
+                        tr
+                            td Габариты
+                            td 216х125х136 мм
+                        tr
+                            td Вес
+                            td 1.75 кг
+                        tr
+                            td Окружающая температура
+                            td Хранение: -10…+60 °С
+                                br
+                                | Работа: +5…+40 °С
+                div.item-page__complect.tab-content.nofloat(data-index="3" id="anchor4")
+                    h2 Базовая комплектация
+                    p GUI Omni (Графический интерфейс пользователя) является интерфейсом созданным по заказу компании. Управление интерфейсом осуществляется посредством "мыши", структура программы помогает обеспечивать интуитивную, эффективную работу и управлять полным пакетом приложений. Уникальная возможность выполнять калибровку по всему диапазону увеличения, является одной из многих функций, которые выгодно отличают Omni от других цифровых инспекционных систем
+                    table
+                        tr
+                            td Диапазон увеличения
+                            td 2.5х - 122х (с линзами 5D)
+                        tr
+                            td Разрешение камеры
+                            td 1920х1080 пикс, 60 fps, 30х (оптич.) / 2х (цифр.)
+                        tr
+                            td Соединение монитора
+                            td HDMI / DVI
+                        tr
+                            td Требования к монитору
+                            td HD или Full HD (рекомендуется)
+                        tr
+                            td Входы/Выходы
+                            td Выход HDMI
+                                br
+                                | USB 2.0, Порт х 4
+                                br
+                                | Сетевой разъем RJ45
+                                br
+                                | Гланый порт IO x 3
+                                br
+                                | Разъем питания DC 24В
+                        tr
+                            td Захват изображения
+                            td Внутреннее сохранение изображения
+                                br
+                                | Внешнее сохранение изображения посредством USB-порта
+                                br
+                                | Сохранение изображения на ПК посредством USB-порта
+                        tr
+                            td Электропитание
+                            td 24В
+                        tr
+                            td Габариты
+                            td 216х125х136 мм
+                        tr
+                            td Вес
+                            td 1.75 кг
+                        tr
+                            td Окружающая температура
+                            td Хранение: -10…+60 °С
+                                br
+                                | Работа: +5…+40 °С
+                div.nofloat.item-page__options.tab-content(data-index="4" id="anchor5")
+                    h2 Опции
+                    table
+                        tr
+                            td Диапазон увеличения
+                            td 2.5х - 122х (с линзами 5D)
+                        tr
+                            td Разрешение камеры
+                            td 1920х1080 пикс, 60 fps, 30х (оптич.) / 2х (цифр.)
+                        tr
+                            td Соединение монитора
+                            td HDMI / DVI
+                        tr
+                            td Требования к монитору
+                            td HD или Full HD (рекомендуется)
+                        tr
+                            td Входы/Выходы
+                            td Выход HDMI
+                                br
+                                | USB 2.0, Порт х 4
+                                br
+                                | Сетевой разъем RJ45
+                                br
+                                | Гланый порт IO x 3
+                                br
+                                | Разъем питания DC 24В
+                        tr
+                            td Захват изображения
+                            td Внутреннее сохранение изображения
+                                br
+                                | Внешнее сохранение изображения посредством USB-порта
+                                br
+                                | Сохранение изображения на ПК посредством USB-порта
+                        tr
+                            td Электропитание
+                            td 24В
+                        tr
+                            td Габариты
+                            td 216х125х136 мм
+                        tr
+                            td Вес
+                            td 1.75 кг
+                        tr
+                            td Окружающая температура
+                            td Хранение: -10…+60 °С
+                                br
+                                | Работа: +5…+40 °С
+                div.item-page__video.tab-content(data-index="5" id="anchor6")
+                    h2 Видео
+                    p.item-page__video_text GUI Omni (Графический интерфейс пользователя) является интерфейсом созданным по заказу компании. Управление интерфейсом осуществляется посредством "мыши", структура программы помогает обеспечивать интуитивную, эффективную работу и управлять полным пакетом приложений. Уникальная возможность выполнять калибровку по всему диапазону увеличения, является одной из многих функций, которые выгодно отличают Omni от других цифровых инспекционных систем
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7mJk_8tr9kc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            aside.category-page__side
+                nav.category-page__side-nav
+                    p.category-page__side-title Оборудование
+                    ul
+                        li
+                            a(href='javascript:void(0)') Сборочно-монтажное оборудование
+                        li
+                            a(href='javascript:void(0)') Оборудование для производства печатных плат
+                        li.parent
+                            a(href='javascript:void(0)') Оборудование для инспекции
+                            span.point
+                            ul.child
+                                li
+                                    a(href='javascript:void(0)') Автоматическая оптическая инспекция печатных плат (АОИ)
+                                li
+                                    a(href='javascript:void(0)') Рентгеновский контроль печатных плат
+                                li
+                                    a(href='javascript:void(0)') Цифровые микроскопы
+                                li
+                                    a(href='javascript:void(0)') Универсальная рабочая станция 3D (после АОИ)
+                                li
+                                    a(href='javascript:void(0)') Автоматическая 3D-инспекция нанесения паяльной пасты (SPI)
+                        li
+                            a(href='javascript:void(0)') Вспомогательное оборудование
+                        li
+                            a(href='javascript:void(0)') Оборудование для обработки кабеля
+                        li
+                            a(href='javascript:void(0)') Оборудование б/у
+                    p.category-page__side-title Комплектующие
+                    ul
+                        li
+                            a(href='javascript:void(0)') Расходные материалы
+                        li
+                            a(href='javascript:void(0)') Запасные части
+                        li
+                            a(href='javascript:void(0)') Питатели
+                        li
+                            a(href='#') Вакуумные питатели
+                nav.category-page__side-nav
+                    p.category-page__side-title Сервис
+                    ul
+                        li
+                            a(href='javascript:void(0)') Техническое обслуживание оборудования
+                        li
+                            a(href='javascript:void(0)') Техническая поддержка и аудит
+                        li
+                            a(href='javascript:void(0)') Изготовление специальных вакуумных захватов
+                        li
+                            a(href='javascript:void(0)') Пуско-наладочные работы и ремонт оборудования

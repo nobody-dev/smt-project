@@ -1,0 +1,318 @@
+extends ./layout/layout.jade
+block vars
+    - var bodyClass = ''
+block content
+    //start search
+    .search-block
+        .container.group
+            form.search-block__form.relative
+                input(type="search", name="s", placeholder="Это поиск: что будем искать?")
+                button(type="submit")
+    //finish search
+    .category-page
+        .container.group
+            .category-page__content
+                .breadcrumbs
+                    a(href='javascript:void(0)') Главная
+                    a(href='javascript:void(0)') Оборудование
+                    a(href='javascript:void(0)') Автоматическая оптическая инспекция печатных плат (АОИ)
+                    span Цифровые микроскопы
+                h1 Цифровые микроскопы
+                .category-page__items.group
+                    .item-single
+                        .item-single__image
+                            a(href='javascript:void(0)')
+                                img(src="images/item3.jpg", alt="", class="img-responsive")
+                                a(class="link-next", href="") Перейти >
+                        .item-single__content
+                            p.item-single__title
+                                a(href='javascript:void(0)') Настольная система АОИ NVI-D100
+                            .item-single__desc
+                                — Линза 5х в базовом комлекте (увеличение 2х - 60х)<br>
+                                — Подключение HD-монитора, 720p, 20-24" (HDMI, DVI)<br>
+                                — Разрешение камеры: 1280х720 пикселей, HD, 720p<br>
+                                — Альтернативное рарешение HD 1080p (опция)<br>
+                                — Возможность захвата и измерения изображения<br>
+                                — Возможность захвата и измерения изображения
+                    .item-single
+                        .item-single__image
+                            a(href='javascript:void(0)')
+                                img(src="images/item4.jpg", alt="", class="img-responsive")
+                                a(class="link-next", href="") Перейти >
+                        .item-single__content
+                            p.item-single__title
+                                a(href='javascript:void(0)') Линейная система АОИ NVI-FXH2
+                            .item-single__desc
+                                — Линза 3х в базовом комлекте (увеличение1,35х-37х)<br>
+                                — Встроенный HD-монитор, 720p, 19"<br>
+                                — Разрешение камеры: 1280х720 пикселей, HD, 720p<br>
+                                — Настройка освещенности, увеличения, высоты инспекции
+                    .item-single
+                        .item-single__image
+                            a(href='javascript:void(0)')
+                                img(src="images/item3.jpg", alt="", class="img-responsive")
+                                a(class="link-next", href="") Перейти >
+                        .item-single__content
+                            p.item-single__title
+                                a(href='javascript:void(0)') Настольная система АОИ NVI-D100
+                            .item-single__desc
+                                — Линза 5х в базовом комлекте (увеличение 2х - 60х)<br>
+                                — Подключение HD-монитора, 720p, 20-24" (HDMI, DVI)<br>
+                                — Разрешение камеры: 1280х720 пикселей, HD, 720p<br>
+                                — Альтернативное рарешение HD 1080p (опция)<br>
+                                — Возможность захвата и измерения изображения<br>
+                                — Возможность захвата и измерения изображения
+                    .item-single
+                        .item-single__image
+                            a(href='javascript:void(0)')
+                                img(src="images/item4.jpg", alt="", class="img-responsive")
+                                a(class="link-next", href="") Перейти >
+                        .item-single__content
+                            p.item-single__title
+                                a(href='javascript:void(0)') Линейная система АОИ NVI-FXH2
+                            .item-single__desc
+                                — Линза 3х в базовом комлекте (увеличение1,35х-37х)<br>
+                                — Встроенный HD-монитор, 720p, 19"<br>
+                                — Разрешение камеры: 1280х720 пикселей, HD, 720p<br>
+                                — Настройка освещенности, увеличения, высоты инспекции
+                .pagination
+                    a(href="javascript:void(0)").prev предыдущая страница
+                    a(href="javascript:void(0)") 1
+                    a(href="javascript:void(0)") 2
+                    a(href="javascript:void(0)") 3
+                    a(href="javascript:void(0)") 4
+                    a(href="javascript:void(0)") 5
+                    a(href="javascript:void(0)").next следующая страница
+                .category-page__info
+                    h2 Дефекты поверхностного монтажа и методы их устранения
+                    .category-page__info-single
+                        .category-page__info-single__title 1. Дефекты трафаретной печати
+                        .category-page__info-single__content
+                            table
+                                tr
+                                    th.t1 Описание
+                                    th.t2
+                                    th.t3 Причины
+                                    th.t4 Устранение
+                                tr
+                                    td.t1 Недостаточное
+                                        | количество паяльной пасты
+                                    td.t2
+                                        img(src="images/img2.jpg", alt="")
+                                    td.t3
+                                        ol
+                                            li Закупоривание апертур трафарета
+                                            li Вычерпывание пасты ракелем
+                                            li Скорость отделения трафарета от
+                                                | печатной платы слишком высокая
+                                            li Недостаточное количество пасты на трафарете
+                                    td.t4
+                                        ol
+                                            li Чаще и качественнее очищать трафарет
+                                            li Уменьшить давление ракеля
+                                            li Уменьшить скорость отделения трафарета от печатной платы
+                                            li Проверить количество пасты на трафарете
+                                tr
+                                    td.t1 Излишнее количество паяльной пасты
+                                    td.t2
+                                        img(src="images/img3.jpg", alt="")
+                                    td.t3
+                                        ol
+                                            li Слабое давление ракеля на трафарет
+                                            li Паста слишком жидкая
+                                            li Скорость отделения трафарета от
+                                                | печатной платы слишком низкая
+                                            li Износ ракеля
+                                            li Поддержка платы снизу не настроена
+                                            li Плохое натяжение трафарета
+                                    td.t4
+                                        ol
+                                            li Увеличить давление ракеля
+                                            li Поменять паяльную пасту
+                                            li Увеличить скорость отделения
+                                                | трафарета от платы
+                                            li Проверить или заменить ракель
+                                            li Проверить поддержку платы снизу
+                                            li Проверить качество натяжения трафарета
+                                tr
+                                    td.t1 Смещения пасты относительно контактных площадок
+                                    td.t2
+                                        img(src="images/img4.jpg", alt="")
+                                    td.t3
+                                        ol
+                                            li Плохое совмещение трафарета с
+                                                | рисунком ПП печатной платы
+                                            li Плохое распознавание реперных
+                                                | знаков на печатной плате или трафарете
+                                    td.t4
+                                        ol
+                                            li Проверить координаты и размеры реперных знаков, выполнить обучение
+                                            li Убедиться в надежном
+                                                | закреплении трафарета и качестве реперных знаков
+                                            li Провести диагностику  автомата,
+                                                | выполнить калибровку
+                    .category-page__info-single
+                        .category-page__info-single__title 2. Дефекты установки компонентов
+                        .category-page__info-single__content
+                            table
+                                tr
+                                    th.t1 Описание
+                                    th.t2
+                                    th.t3 Причины
+                                    th.t4 Устранение
+                                tr
+                                    td.t1 Разворот по углу
+                                    td.t2
+                                        img(src="images/img5.jpg", alt="")
+                                    td.t3
+                                        ol
+                                            li Неточное распознавание компонента
+                                                | видеосистемой установщика компонентов
+                                            li Неправильная высота установки компонента
+                                            li Низкий уровень вакуума при захвате
+                                    td.t4
+                                        ol
+                                            li Настроить форму и освещение компонента на компьютере установщика
+                                            li Настроить высоту установки компонента
+                                            li Очистить или заменить захват
+                                tr
+                                    td.t1 Смещения компонентов
+                                    td.t2
+                                        img(src="images/img6.jpg", alt="")
+                                    td.t3
+                                        ol
+                                            li Неточное распознавание компонента видеосистемой установщика
+                                            li Неправильная высота установки
+                                            li Неправильно заданы координаты установки или репера
+                                            li Неправильно спроектированы контактные площадки
+                                    td.t4
+                                        ol
+                                            li Настроить форму и освещение компонента на ПК установщика
+                                            li Настроить высоту установки
+                                            li Проверить координаты
+                                                | установки и расположения реперов
+                                            li Изменить дизайн контактных площадок
+                                tr
+                                    td.t1 Отсутствие компонента
+                                    td.t2
+                                        img(src="images/img7.jpg", alt="")
+                                    td.t3
+                                        ol
+                                            li Плохое совмещение трафарета с
+                                                | рисунком ПП печатной платы
+                                            li Плохое распознавание реперных
+                                                | знаков на печатной плате или трафарете
+                                    td.t4
+                                        ol
+                                            li Очистить или заменить захват
+                                            li Настроить высоту установки в
+                                                | тестовом режиме
+                                            li Настроить форму и освещение
+                                                | компонента
+                    .category-page__info-single
+                        .category-page__info-single__title 3. Дефекты пайки оплавлением
+                        .category-page__info-single__content
+                            table
+                                tr
+                                    th.t1 Описание
+                                    th.t2
+                                    th.t3 Причины
+                                    th.t4 Устранение
+                                tr
+                                    td.t1 Разворот по углу
+                                    td.t2
+                                        img(src="images/img5.jpg", alt="")
+                                    td.t3
+                                        ol
+                                            li Неточное распознавание компонента
+                                                | видеосистемой установщика компонентов
+                                            li Неправильная высота установки компонента
+                                            li Низкий уровень вакуума при захвате
+                                    td.t4
+                                        ol
+                                            li Настроить форму и освещение компонента на компьютере установщика
+                                            li Настроить высоту установки компонента
+                                            li Очистить или заменить захват
+                                tr
+                                    td.t1 Смещения компонентов
+                                    td.t2
+                                        img(src="images/img6.jpg", alt="")
+                                    td.t3
+                                        ol
+                                            li Неточное распознавание компонента видеосистемой установщика
+                                            li Неправильная высота установки
+                                            li Неправильно заданы координаты установки или репера
+                                            li Неправильно спроектированы контактные площадки
+                                    td.t4
+                                        ol
+                                            li Настроить форму и освещение компонента на ПК установщика
+                                            li Настроить высоту установки
+                                            li Проверить координаты
+                                                | установки и расположения реперов
+                                            li Изменить дизайн контактных площадок
+                                tr
+                                    td.t1 Отсутствие компонента
+                                    td.t2
+                                        img(src="images/img7.jpg", alt="")
+                                    td.t3
+                                        ol
+                                            li Плохое совмещение трафарета с
+                                                | рисунком ПП печатной платы
+                                            li Плохое распознавание реперных
+                                                | знаков на печатной плате или трафарете
+                                    td.t4
+                                        ol
+                                            li Очистить или заменить захват
+                                            li Настроить высоту установки в
+                                                | тестовом режиме
+                                            li Настроить форму и освещение
+                                                | компонента
+            aside.category-page__side
+                nav.category-page__side-nav
+                    p.category-page__side-title Оборудование
+                    ul
+                        li
+                            a(href='javascript:void(0)') Сборочно-монтажное оборудование
+                        li
+                            a(href='javascript:void(0)') Оборудование для производства печатных плат
+                        li.parent
+                            a(href='javascript:void(0)') Оборудование для инспекции
+                            span.point
+                            ul.child
+                                li
+                                    a(href='javascript:void(0)') Автоматическая оптическая инспекция печатных плат (АОИ)
+                                li
+                                    a(href='javascript:void(0)') Рентгеновский контроль печатных плат
+                                li
+                                    a(href='javascript:void(0)') Цифровые микроскопы
+                                li
+                                    a(href='javascript:void(0)') Универсальная рабочая станция 3D (после АОИ)
+                                li
+                                    a(href='javascript:void(0)') Автоматическая 3D-инспекция нанесения паяльной пасты (SPI)
+                        li
+                            a(href='javascript:void(0)') Вспомогательное оборудование
+                        li
+                            a(href='javascript:void(0)') Оборудование для обработки кабеля
+                        li
+                            a(href='javascript:void(0)') Оборудование б/у
+                    p.category-page__side-title Комплектующие
+                    ul
+                        li
+                            a(href='javascript:void(0)') Расходные материалы
+                        li
+                            a(href='javascript:void(0)') Запасные части
+                        li
+                            a(href='javascript:void(0)') Питатели
+                        li
+                            a(href='#') Вакуумные питатели
+                nav.category-page__side-nav
+                    p.category-page__side-title Сервис
+                    ul
+                        li
+                            a(href='javascript:void(0)') Техническое обслуживание оборудования
+                        li
+                            a(href='javascript:void(0)') Техническая поддержка и аудит
+                        li
+                            a(href='javascript:void(0)') Изготовление специальных вакуумных захватов
+                        li
+                            a(href='javascript:void(0)') Пуско-наладочные работы и ремонт оборудования

@@ -1,0 +1,111 @@
+doctype
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(href="css/screen.css", type="text/css", rel="stylesheet")
+        meta(name="description", content="СМТ технологии")
+        meta(name="keywords", content="СМТ технологии")
+        title СМТ технологии
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+        script(src="js/scripts.js")
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css")
+        script(src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js")
+    block vars
+    body(class="#{bodyClass}")
+        //start header
+        header.header
+            .container.group
+                a(href="javascript:void(0)").header__logo
+                    img(src="images/logo.png", alt="СМТ технологии", class="img-responsive")
+                nav.header__nav
+                    ul.menu-list
+                        li
+                            a(href='#categories') Каталог
+                        li
+                            a(href='javascript:void(0)') Компания
+                        li
+                            a(href='javascript:void(0)') Новости
+                        li
+                            a(href='javascript:void(0)') Партнеры
+                        li
+                            a(href='javascript:void(0)') Проекты
+                        li
+                            a(href='javascript:void(0)') Акции
+                        li
+                            a(href='javascript:void(0)') Контакты
+                a(href="#").header__show-menu.visible-sm-block.visible-xs-block
+                    span
+                    span
+                    span
+                .header__languages
+                    a(href='javascript:void(0)') eng
+                    = ' '
+                    | /
+                    = ' '
+                    a(href='javascript:void(0)').active rus
+                .header__contacts
+                    p.header__phone
+                        a(href='tel:88007758326') 8 800 775 83 26
+                    p.header__phone
+                        a(href='tel:84993222025') 8 499 322 20 25
+                    p.header__email
+                        a(href='mailto:info@smttech.ru') info@smttech.ru
+        //finish header
+        block content
+
+        //start footer
+        footer.footer
+            .container.group
+                .footer__logo
+                    a(href="javascript:void(0)")
+                        img(src="images/logo.png", alt="СМТ технологии", class="img-responsive")
+                .footer__contacts
+                    p.footer__phone
+                        a(href='tel:88007758326') 8 800 775-83-26
+                    p.footer__phone
+                        a(href='tel:84993222025') 8 499 322 20 25
+                nav.footer__nav
+                    ul
+                        li
+                            a(href='javascript:void(0)') Компания
+                        li
+                            a(href='javascript:void(0)') Новости
+                        li
+                            a(href='javascript:void(0)') Проекты
+                        li
+                            a(href='javascript:void(0)') Партнеры
+                        li
+                            a(href='javascript:void(0)') Контакты
+        //finish footer
+        //start modals windows
+        .modal-window.modal.fade#modal1
+            .modal-window__content
+                a(href='#', data-dismiss="modal").close
+                .modal-window__title Оставьте Ваши контактные данные, мы ответим вам в течение 60 минут
+                form
+                    input(type="name", name="name", placeholder="Как к Вам обращаться?")
+                    input(type="tel", name="phone", placeholder="Номер телефона")
+                    input(type="email", name="email", placeholder="Электронная почта")
+                    button(type="submit") Отправить
+        .modal-window.modal.fade#modal2
+            .modal-window__content
+                a(href='#', data-dismiss="modal").close
+                .modal-window__title Заказать звонок
+                form
+                    input(type="tel", name="phone", placeholder="Номер телефона")
+                    input(type="text", name="name", placeholder="Ваше имя")
+                    button(type="submit") Отправить
+        .modal-window.modal.fade#modal3
+            .modal-window__content
+                a(href='#', data-dismiss="modal").close
+                .modal-window__title ОСТАВЬТЕ ВАШИ КОНТАКТНЫЕ ДАННЫЕ, МЫ СВЯЖЕМСЯ С ВАМИ В ТЕЧЕНИЕ 15 МИНУТ ДЛЯ УТОЧНЕНИЯ ТЕХНИЧЕСКИХ ДЕТАЛЕЙ.
+                form
+                    input(type="name", name="name", placeholder="Как к Вам обращаться?")
+                    input(type="tel", name="phone", placeholder="Номер телефона")
+                    input(type="email", name="email", placeholder="Электронная почта")
+                    button(type="submit") Отправить
+        //finish modals windows
+        script(type="text/javascript", src="js/functions.js")
+        

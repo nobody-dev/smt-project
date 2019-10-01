@@ -1,0 +1,149 @@
+extends ./layout/layout.jade
+block vars
+    - var bodyClass = ''
+block content
+    //start search
+    .search-block
+        .container.group
+            form.search-block__form.relative
+                input(type="search", name="s", placeholder="Это поиск: что будем искать?")
+                button(type="submit")
+    //finish search
+    .news-page
+        .container.group
+            .breadcrumbs
+                a(href='javascript:void(0)') Главная
+                span Новости
+            h1 Новости
+            .news-page__list.group
+                .news-page__single
+                    .news-page__single-date
+                        time(datetime="2017-02-20") 2017-02-20 16:45:27
+                    .news-page__single-image
+                        a(href="javascript:void(0)")
+                        img(src="images/news1.jpg", alt="")
+                    .news-page__single-content
+                        p.news-page__single-title
+                            a(href='javascript:void(0)') Ждем Вас на выставке ЭлектронТехЭкспо 25-27 апреля 2017г.
+                        //noindex
+                        .news-page__single-intro
+                            | Наша компания "СМТтехнологии" 25-27 апреля примет участие в 15-ой Международной выставке технологий, оборудования и материалов для производства изделий электронной
+                        .news-page__single-more
+                            a(href='javascript:void(0)') Читать подробнее
+                .news-page__single
+                    .news-page__single-date
+                        time(datetime="2017-02-20") 2017-02-20 16:45:27
+                    .news-page__single-image
+                        a(href="javascript:void(0)")
+                        img(src="images/news2.jpg", alt="")
+                    .news-page__single-content
+                        p.news-page__single-title
+                            a(href='javascript:void(0)') Новая система струйной отмывки ПП от компании E-therm
+                        //noindex
+                        .news-page__single-intro
+                            | Данная система уже хорошо зарекомендовала себя на многих европейских производствах в качестве надежного и экономичного аппарата отмывки печатных узлов.
+                        .news-page__single-more
+                            a(href='javascript:void(0)') Читать подробнее
+                .news-page__single
+                    .news-page__single-date
+                        time(datetime="2017-02-20") 2017-02-20 16:45:27
+                    .news-page__single-image
+                        a(href="javascript:void(0)")
+                        img(src="images/news3.jpg", alt="")
+                    .news-page__single-content
+                        p.news-page__single-title
+                            a(href='javascript:void(0)') Оборудование для изготовления прототипов печатных плат от французской компании C.I.F.
+                        .news-page__single-intro
+                            | звестный разработчик сложных технологических систем, компания C.I.F., представляет на российском рынке широчайший спектр самых разнообразных единиц для организации как единичных сборочных...
+                        .news-page__single-more
+                            a(href='javascript:void(0)') Читать подробнее
+                .news-page__single
+                    .news-page__single-date
+                        time(datetime="2017-02-20") 2017-02-20 16:45:27
+                    .news-page__single-image
+                        a(href="javascript:void(0)")
+                        img(src="images/news1.jpg", alt="")
+                    .news-page__single-content
+                        p.news-page__single-title
+                            a(href='javascript:void(0)') Ждем Вас на выставке ЭлектронТехЭкспо 25-27 апреля 2017г.
+                        //noindex
+                        .news-page__single-intro
+                            | Наша компания "СМТтехнологии" 25-27 апреля примет участие в 15-ой Международной выставке технологий, оборудования и материалов для производства изделий электронной
+                        .news-page__single-more
+                            a(href='javascript:void(0)') Читать подробнее
+                .news-page__single
+                    .news-page__single-date
+                        time(datetime="2017-02-20") 2017-02-20 16:45:27
+                    .news-page__single-image
+                        a(href="javascript:void(0)")
+                        img(src="images/news2.jpg", alt="")
+                    .news-page__single-content
+                        p.news-page__single-title
+                            a(href='javascript:void(0)') Новая система струйной отмывки ПП от компании E-therm
+                        //noindex
+                        .news-page__single-intro
+                            | Данная система уже хорошо зарекомендовала себя на многих европейских производствах в качестве надежного и экономичного аппарата отмывки печатных узлов.
+                        .news-page__single-more
+                            a(href='javascript:void(0)') Читать подробнее
+                .news-page__single
+                    .news-page__single-date
+                        time(datetime="2017-02-20") 2017-02-20 16:45:27
+                    .news-page__single-image
+                        a(href="javascript:void(0)")
+                        img(src="images/news3.jpg", alt="")
+                    .news-page__single-content
+                        p.news-page__single-title
+                            a(href='javascript:void(0)') Оборудование для изготовления прототипов печатных плат от французской компании C.I.F.
+                        .news-page__single-intro
+                            | звестный разработчик сложных технологических систем, компания C.I.F., представляет на российском рынке широчайший спектр самых разнообразных единиц для организации как единичных сборочных...
+                        .news-page__single-more
+                            a(href='javascript:void(0)') Читать подробнее
+                .news-page__single
+                    .news-page__single-date
+                        time(datetime="2017-02-20") 2017-02-20 16:45:27
+                    .news-page__single-image
+                        a(href="javascript:void(0)")
+                        img(src="images/news1.jpg", alt="")
+                    .news-page__single-content
+                        p.news-page__single-title
+                            a(href='javascript:void(0)') Ждем Вас на выставке ЭлектронТехЭкспо 25-27 апреля 2017г.
+                        //noindex
+                        .news-page__single-intro
+                            | Наша компания "СМТтехнологии" 25-27 апреля примет участие в 15-ой Международной выставке технологий, оборудования и материалов для производства изделий электронной
+                        .news-page__single-more
+                            a(href='javascript:void(0)') Читать подробнее
+                .news-page__single
+                    .news-page__single-date
+                        time(datetime="2017-02-20") 2017-02-20 16:45:27
+                    .news-page__single-image
+                        a(href="javascript:void(0)")
+                        img(src="images/news2.jpg", alt="")
+                    .news-page__single-content
+                        p.news-page__single-title
+                            a(href='javascript:void(0)') Новая система струйной отмывки ПП от компании E-therm
+                        //noindex
+                        .news-page__single-intro
+                            | Данная система уже хорошо зарекомендовала себя на многих европейских производствах в качестве надежного и экономичного аппарата отмывки печатных узлов.
+                        .news-page__single-more
+                            a(href='javascript:void(0)') Читать подробнее
+                .news-page__single
+                    .news-page__single-date
+                        time(datetime="2017-02-20") 2017-02-20 16:45:27
+                    .news-page__single-image
+                        a(href="javascript:void(0)")
+                        img(src="images/news3.jpg", alt="")
+                    .news-page__single-content
+                        p.news-page__single-title
+                            a(href='javascript:void(0)') Оборудование для изготовления прототипов печатных плат от французской компании C.I.F.
+                        .news-page__single-intro
+                            | звестный разработчик сложных технологических систем, компания C.I.F., представляет на российском рынке широчайший спектр самых разнообразных единиц для организации как единичных сборочных...
+                        .news-page__single-more
+                            a(href='javascript:void(0)') Читать подробнее
+            .pagination
+                a(href="javascript:void(0)").prev < предыдущая страница
+                a(href="javascript:void(0)") 1
+                a(href="javascript:void(0)") 2
+                a(href="javascript:void(0)") 3
+                a(href="javascript:void(0)") 4
+                a(href="javascript:void(0)") 5
+                a(href="javascript:void(0)").next следующая страница >

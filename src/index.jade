@@ -1,0 +1,246 @@
+extends ./layout/layout.jade
+block vars
+    - var bodyClass = 'main-page'
+block content
+    //start banner
+    .banner-block.relative
+        .like_table
+            .table_cell
+                .banner-block__header
+                    p
+                        span Мы поставляем
+                        | решения для производства электроники
+        a(href='#').banner-block__scroll Наш каталог
+    //finish banner
+    //start search
+    .search-block.main-search
+        .container.group
+            form.search-block__form.relative
+                input(type="search", name="s", placeholder="Это поиск: что будем искать?")
+                button(type="submit")
+    //finish search
+    //start cats list
+    .categories#categories
+        .container.group
+            .categories__list.group
+                .categories__single
+                    .categories__single__image
+                        a(href='javascript:void(0)')
+                            img(src="images/cat1.png", alt="", class="img-responsive center-block")
+                    p.categories__single__title
+                        a(href='javascript:void(0)') Оборудование
+                    .categories__single__see
+                        a(href="#cats", data-toggle="modal") Смотреть категории
+                .categories__single
+                    .categories__single__image
+                        a(href='javascript:void(0)')
+                            img(style="max-width: 64px; max-height: 64px;" src="images/MICRO1.jpg", alt="", class="img-responsive center-block")
+                    p.categories__single__title
+                        a(href='javascript:void(0)') Решения для микроэлектроники
+                    .categories__single__see
+                        a(href="#cats", data-toggle="modal") Смотреть категории
+                .categories__single
+                    .categories__single__image
+                        a(href='javascript:void(0)')
+                            img(src="images/cat3.png", alt="", class="img-responsive center-block")
+                    p.categories__single__title
+                        a(href='javascript:void(0)') Расходные материалы
+                    .categories__single__see
+                        a(href="#cats", data-toggle="modal") Смотреть категории
+                .categories__single
+                    .categories__single__image
+                        a(href='javascript:void(0)')
+                            img(src="images/cat2.png", alt="", class="img-responsive center-block")
+                    p.categories__single__title
+                        a(href='javascript:void(0)') Запчасти/Комплектующие
+                    .categories__single__see
+                        a(href="#cats", data-toggle="modal") Смотреть категории
+                .categories__single
+                    .categories__single__image
+                        a(href='javascript:void(0)')
+                            img(src="images/cat6.png", alt="", class="img-responsive center-block")
+                    p.categories__single__title
+                        a(href='javascript:void(0)') Оборудование б/у
+                    .categories__single__see
+                        a(href="#cats", data-toggle="modal") Смотреть категории
+                .categories__single
+                    .categories__single__image
+                        a(href='javascript:void(0)')
+                            img(src="images/cat5.png", alt="", class="img-responsive center-block")
+                    p.categories__single__title
+                        a(href='javascript:void(0)') Решения "под ключ"
+                    .categories__single__see
+                        a(href="#cats", data-toggle="modal") Смотреть категории
+                .categories__single
+                    .categories__single__image
+                        a(href='javascript:void(0)')
+                            img(style="max-width: 64px; max-height: 64px;" src="images/sale2.jpg", alt="", class="img-responsive center-block")
+                    p.categories__single__title
+                        a(href='javascript:void(0)') Акции
+                    .categories__single__see
+                        a(href="#cats", data-toggle="modal") Смотреть категории
+                .categories__single
+                    .categories__single__image
+                        a(href='javascript:void(0)')
+                            img(src="images/cat4.png", alt="", class="img-responsive center-block")
+                    p.categories__single__title
+                        a(href='javascript:void(0)') Сервис
+                    .categories__single__see
+                        a(href="#cats", data-toggle="modal") Смотреть категории
+    //finish cats
+    //start questions block
+    .has-questions
+        .container.group
+            .has-questions__block
+                p.has-questions__block-title Есть вопросы по продукции?
+                .has-questions__block-text Напишите нам через форму обратной связи или свяжитесь по
+                    = ' '
+                    a(href='javascript:void(0)') контактным данным.
+                a(href='javascript:void(0)').has-questions__block__button Написать нам
+                a(target="_blank" href="/catalogue/material.pdf" class="has-questions__block__button" onclick="yaCounter16633729.reachGoal('materials'); return true;") Скачать каталог материалов
+                a(target="_blank" href="/catalogue/equipment.pdf" class="has-questions__block__button" onclick="yaCounter16633729.reachGoal('equipment'); return true;") Скачать каталог оборудования
+    //finish questions
+    //start last news
+    .news-block
+        .container.group
+            .news-block__title Новости
+            .news-block__list.group
+                .news-block__single
+                    .news-block__single-date
+                        time(datetime="2017-02-20") 2017-02-20 16:45:27
+                    .news-block__single-image
+                        a(href="javascript:void(0)")
+                        img(src="images/news1.jpg", alt="")
+                    .news-block__single-content
+                        p.news-block__single-title
+                            a(href='javascript:void(0)') Ждем Вас на выставке ЭлектронТехЭкспо 25-27 апреля 2017г.
+                        //noindex
+                        .news-block__single-intro
+                                | Наша компания "СМТтехнологии" 25-27 апреля примет участие в 15-ой Международной выставке технологий, оборудования и материалов для производства изделий электронной
+                        .news-block__single-more
+                            a(href='javascript:void(0)') Читать подробнее
+                .news-block__single
+                    .news-block__single-date
+                        time(datetime="2017-02-20") 2017-02-20 16:45:27
+                    .news-block__single-image
+                        a(href="javascript:void(0)")
+                        img(src="images/news2.jpg", alt="")
+                    .news-block__single-content
+                        p.news-block__single-title
+                            a(href='javascript:void(0)') Новая система струйной отмывки ПП от компании E-therm
+                        //noindex
+                        .news-block__single-intro
+                                | Данная система уже хорошо зарекомендовала себя на многих европейских производствах в качестве надежного и экономичного аппарата отмывки печатных узлов.
+                        .news-block__single-more
+                            a(href='javascript:void(0)') Читать подробнее
+                .news-block__single
+                    .news-block__single-date
+                        time(datetime="2017-02-20") 2017-02-20 16:45:27
+                    .news-block__single-image
+                        a(href="javascript:void(0)")
+                        img(src="images/news3.jpg", alt="")
+                    .news-block__single-content
+                        p.news-block__single-title
+                            a(href='javascript:void(0)') Оборудование для изготовления прототипов печатных плат от французской компании C.I.F.
+                        .news-block__single-intro
+                                | звестный разработчик сложных технологических систем, компания C.I.F., представляет на российском рынке широчайший спектр самых разнообразных единиц для организации как единичных сборочных...
+                        .news-block__single-more
+                            a(href='javascript:void(0)') Читать подробнее
+            .news-block__more.text-center
+                a(href="javascript:void(0)") Смотреть все новости
+    //finish last news
+    //start about company
+    .about-company
+        .container.group
+            .about-company__title О компании
+            .about-company__content
+                p Компания «СМТ технологии» была основана в 2011 году  высокопрофессиональными инженерами, выпускниками МГТУ им. Н. Э. Баумана, имевшими к моменту открытия бизнеса более чем семилетний опыт работы в отрасли производства электроники. Штат компании укомплектован специалистами, имеющими профильное образование и хорошо знающими все стадии процесса производства электронных изделий. Именно поэтому мы всегда нацелены на глубокую технологическую проработку вопроса и результат, отвечающий всем требованиям, предъявляемым заказчиком.
+                img(src="images/img1.jpg", alt="", class="align-left")
+                p Девизом нашей компании является слоган «Свежий взгляд на производство электроники». Мы поставляем решения, ведущие к повышению качества выпускаемой продукции, росту эффективности производства и уровня
+                    br
+                    | сервиса. Нестандартный подход к решению традиционных и новых задач зачастую приводит к впечатляющим результатам, удовлетворяющих
+                    br
+                    | техническим требованиям производства и бюджету.
+                p Кроме того, наша компания осуществляет гибкую ценовую политику, развенчивая таким образом устоявшийся тезис «Качественно – значит
+                    br
+                    | дорого».
+                p Помимо поставки технологического оборудования и материалов, компания «СМТ технологии» специализируется также на продажах запасных частей и аксессуаров для SMD-оборудования от ведущих производителей Assembleon, Yamaha, Fuji, Juki, Samsung, Dek, MPM, Siplace, EKRA и других. Приобретая у нас запасные части и комплектующие, Вы можете быть уверены в качестве продукции, своевременности поставок и гибкости ценообразования.
+    //finish about company
+    //start modal cats block
+    .modal-block.modal.fade#cats
+        .modal-block__content
+            a(href='#' data-dismiss="modal").close
+            .modal-categories.group
+                .modal-categories__single
+                    .modal-categories__single-image
+                        a(href='javascript:void(0)')
+                            img(src="images/m1.png", alt="", class="img-responsive center-block")
+                    p.modal-categories__single-title
+                        a(href='javascript:void(0)') Оборудование для производства печатных плат
+                .modal-categories__single
+                    .modal-categories__single-image
+                        a(href='javascript:void(0)')
+                            img(src="images/m2.png", alt="", class="img-responsive center-block")
+                    p.modal-categories__single-title
+                        a(href='javascript:void(0)') Отмывка печатных плат и трафаретов
+                .modal-categories__single
+                    .modal-categories__single-image
+                        a(href='javascript:void(0)')
+                            img(src="images/m3.png", alt="", class="img-responsive center-block")
+                    p.modal-categories__single-title
+                        a(href='javascript:void(0)') Удаление дыма, вредных газов и испарений
+                .modal-categories__single
+                    .modal-categories__single-image
+                        a(href='javascript:void(0)')
+                            img(src="images/m4.png", alt="", class="img-responsive center-block")
+                    p.modal-categories__single-title
+                        a(href='javascript:void(0)') Поверхностный монтаж печатных плат
+                .modal-categories__single
+                    .modal-categories__single-image
+                        a(href='javascript:void(0)')
+                            img(src="images/m5.png", alt="", class="img-responsive center-block")
+                    p.modal-categories__single-title
+                        a(href='javascript:void(0)') Влагозащита печатных узлов
+                .modal-categories__single
+                    .modal-categories__single-image
+                        a(href='javascript:void(0)')
+                            img(src="images/m6.png", alt="", class="img-responsive center-block")
+                    p.modal-categories__single-title
+                        a(href='javascript:void(0)') Облуживание выводов компонентов
+                .modal-categories__single
+                    .modal-categories__single-image
+                        a(href='javascript:void(0)')
+                            img(src="images/m7.png", alt="", class="img-responsive center-block")
+                    p.modal-categories__single-title
+                        a(href='javascript:void(0)') Выводной монтаж печатных плат
+                .modal-categories__single
+                    .modal-categories__single-image
+                        a(href='javascript:void(0)')
+                            img(src="images/m8.png", alt="", class="img-responsive center-block")
+                    p.modal-categories__single-title
+                        a(href='javascript:void(0)') Лазерная маркировка печатных плат
+                .modal-categories__single
+                    .modal-categories__single-image
+                        a(href='javascript:void(0)')
+                            img(src="images/m9.png", alt="", class="img-responsive center-block")
+                    p.modal-categories__single-title
+                        a(href='javascript:void(0)') Обработка кабеля
+                .modal-categories__single
+                    .modal-categories__single-image
+                        a(href='javascript:void(0)')
+                            img(src="images/m10.png", alt="", class="img-responsive center-block")
+                    p.modal-categories__single-title
+                        a(href='javascript:void(0)') Инспекция печатных узлов
+                .modal-categories__single
+                    .modal-categories__single-image
+                        a(href='javascript:void(0)')
+                            img(src="images/m11.png", alt="", class="img-responsive center-block")
+                    p.modal-categories__single-title
+                        a(href='javascript:void(0)') Разделение групповых заготовок печатных плат
+                .modal-categories__single
+                    .modal-categories__single-image
+                        a(href='javascript:void(0)')
+                            img(src="images/m12.png", alt="", class="img-responsive center-block")
+                    p.modal-categories__single-title
+                        a(href='javascript:void(0)') Хранение, подсчет и перемещение ПП и компонентов, промышленная мебель
+    //finish modal cats

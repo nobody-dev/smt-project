@@ -1,0 +1,34 @@
+extends ./layout/layout.jade
+block vars
+    - var bodyClass = ''
+block content
+    //start search
+    .search-block
+        .container.group
+            form.search-block__form.relative
+                input(name="s", type="search", placeholder="Это поиск: что будем искать?")
+                button(type="submit")
+    //finish search
+    .single-page
+        .container.group
+            .breadcrumbs
+                a(href='javascript:void(0)') Главная
+                span Новости
+            h1 Новая система струйной отмывки ПП от компании E-therm
+            p.red Новая надежная модель автоматизированной системы струйной отмывки печатных плат E-therm AQ-650
+            img(class="img-responsive", src="images/single.jpg", alt="")
+            p Данная система уже хорошо зарекомендовала себя на многих европейских производствах в качестве надежного и экономичного аппарата отмывки печатных узлов. Краткие параметры системы:
+            ul
+                li Корзина для образцов (ДхШхВ): 610х560х100 мм (2 уровня)
+                li Емкость бака для жидкости: 70 Л
+                li Емкость бака для концентрата: 30 Л
+                li Емкость бака для распылителя: 17-23 Л
+                li Метод отмывки: распыление на 360°, сушка горячим воздухом
+            p Более подробную информацию, Вы всегда можете получить на нашем сайте
+                = ' '
+                a(href='javascript:void(0)') http://smttech.ru/card/AQ-650
+                |, или позвонив нашим специалистам по продажам и инженерам компании.
+            .single-page__options.group
+            // Детальная новость, кнопка, удалил ненужное гавно, и добавил кнопку
+            a(class="btn-sub" href="javascript:void(0)") Узнать больше
+            hr

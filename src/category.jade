@@ -1,0 +1,165 @@
+extends ./layout/layout.jade
+block vars
+    - var bodyClass = ''
+block content
+    //start search
+    .search-block
+        .container.group
+            form.search-block__form.relative
+                    input(name="s", type="search", placeholder="Это поиск: что будем искать?")
+                    button(type="submit")
+    //finish search
+    // Убрать один nav тем самым отделили сервис
+    .category-page
+        .container.group
+            .category-page__content
+                .breadcrumbs
+                    a(href='javascript:void(0)') Главная
+                    a(href='javascript:void(0)') Оборудование
+                    a(href='javascript:void(0)') Оборудование для инспекции
+                    span Цифровые микроскопы
+                h1 Цифровые микроскопы
+                //Убрать класс group - это отступы между блоками через after
+                .category-page__items
+                    .item-single
+                        .item-single__image
+                            a(href='javascript:void(0)')
+                                img(class="img-responsive", src="images/item1.jpg", alt="")
+                                a(class="link-next", href="") Перейти > 
+                        .item-single__content
+                            p.item-single__title
+                                a(href='javascript:void(0)') Настольный цифровой видеомикроскоп Inspex HD Vesa GRIDS
+                            .item-single__desc.
+                                — Линза 5х в базовом комлекте (увеличение 2х - 60х)<br>
+                                — Подключение HD-монитора, 720p, 20-24" (HDMI, DVI)<br>
+                                — Разрешение камеры: 1280х720 пикселей, HD, 720p<br>
+                                — Альтернативное рарешение HD 1080p (опция)<br>
+                                — Возможность захвата и измерения изображения<br>
+                                — Возможность захвата и измерения изображения
+                    .item-single
+                        .item-single__image
+                            a(href='javascript:void(0)')
+                                img(class="img-responsive", src="images/item2.jpg", alt="")
+                                a(class="link-next", href="") Перейти >
+                        .item-single__content
+                            p.item-single__title
+                                a(href='javascript:void(0)') Цифровой видеомикроскоп Vista HD GRIDS
+                            .item-single__desc.
+                                — Линза 3х в базовом комлекте (увеличение1,35х-37х)<br>
+                                — Встроенный HD-монитор, 720p, 19"<br>
+                                — Разрешение камеры: 1280х720 пикселей, HD, 720p<br>
+                                — Настройка освещенности, увеличения, высоты инспекции
+                    .item-single
+                        .item-single__image
+                            a(href='javascript:void(0)')
+                                img(class="img-responsive", src="images/item1.jpg", alt="")
+                                a(class="link-next", href="") Перейти >
+                        .item-single__content
+                            p.item-single__title
+                                a(href='javascript:void(0)') Настольный цифровой видеомикроскоп Inspex HD Vesa GRIDS
+                            .item-single__desc.
+                                — Линза 5х в базовом комлекте (увеличение 2х - 60х)<br>
+                                — Подключение HD-монитора, 720p, 20-24" (HDMI, DVI)<br>
+                                — Разрешение камеры: 1280х720 пикселей, HD, 720p<br>
+                                — Альтернативное рарешение HD 1080p (опция)<br>
+                                — Возможность захвата и измерения изображения<br>
+                                — Возможность захвата и измерения изображения
+                    .item-single
+                        .item-single__image
+                            a(href='javascript:void(0)')
+                                img(class="img-responsive", src="images/item2.jpg", alt="")
+                                a(class="link-next", href="") Перейти >
+                        .item-single__content
+                            p.item-single__title
+                                a(href='javascript:void(0)') Цифровой видеомикроскоп Vista HD GRIDS
+                            .item-single__desc.
+                                — Линза 3х в базовом комлекте (увеличение1,35х-37х)<br>
+                                — Встроенный HD-монитор, 720p, 19"<br>
+                                — Разрешение камеры: 1280х720 пикселей, HD, 720p<br>
+                                — Настройка освещенности, увеличения, высоты инспекции
+                    .item-single
+                        .item-single__image
+                            a(href='javascript:void(0)')
+                                img(class="img-responsive", src="images/item1.jpg", alt="")
+                                a(class="link-next", href="") Перейти >
+                        .item-single__content
+                            p.item-single__title
+                                a(href='javascript:void(0)') Настольный цифровой видеомикроскоп Inspex HD Vesa GRIDS
+                            .item-single__desc.
+                                — Линза 5х в базовом комлекте (увеличение 2х - 60х)<br>
+                                — Подключение HD-монитора, 720p, 20-24" (HDMI, DVI)<br>
+                                — Разрешение камеры: 1280х720 пикселей, HD, 720p<br>
+                                — Альтернативное рарешение HD 1080p (опция)<br>
+                                — Возможность захвата и измерения изображения<br>
+                                — Возможность захвата и измерения изображения
+                    .item-single
+                        .item-single__image
+                            a(href='javascript:void(0)')
+                                img(class="img-responsive", src="images/item2.jpg", alt="")
+                                a(class="link-next", href="") Перейти >
+                        .item-single__content
+                            p.item-single__title
+                                a(href='javascript:void(0)') Цифровой видеомикроскоп Vista HD GRIDS
+                            .item-single__desc.
+                                — Линза 3х в базовом комлекте (увеличение1,35х-37х)<br>
+                                — Встроенный HD-монитор, 720p, 19"<br>
+                                — Разрешение камеры: 1280х720 пикселей, HD, 720p<br>
+                                — Настройка освещенности, увеличения, высоты инспекции
+                .category-page__description
+                    h2 Микроскопы - незаменимый атрибут любого производства электроники
+                    p Востребованность использования микроскопов на современном этапе развития технологий автоматизированного производства в электронной промышленности очень высока.
+                    p Микроскоп – это высокотехнологичное оптическое устройство для исследования, наблюдения, измерения и проверки материалов при многократном увеличении.
+                    p Микроскоп представляет собой тубус в котором закреплены основные части: объектив и окуляр. Вся система, в зависимости от назначения, находится на подвижном штативе, который закреплен на предметном столе. Для точности фокусировки изображения используется штатив, который имеет систему винтов и зажимов, позволяющую двигать объектив микроскопа вправо \ влево и вверх \ вниз. Предметный стол современного микроскопа имеет ручную или автоматическую систему движения по осям X и Y для перемещения объекта исследования. Дополнительные устройства и системы, такие как современный ПК, позволяют  выводить изображение на экран монитора, а также  измерять исследуемые объекты.
+                    p В зависимости от назначения, специализированные микроскопы могут быть использованы:
+                    ul
+                        li Мастерами, выполняющими высокоточные работы, например, пайка, нанесение дорожек, инспекция припоя, обнаружение поддельных компонентов и т.д.
+                        li ехнологами на производстве для исследования новых материалов (растворов паяльных паст, различных жидкостей и т.п.), проверки качества соединений (микротрещины, неровности, коррозия и т.п.), измерения маленьких предметов и расстояний           (электронные компоненты, контактные площадки, дорожки, переходные отверстия печатных плат)
+            aside.category-page__side
+                nav.category-page__side-nav
+                    p.category-page__side-title Оборудование
+                    ul
+                        li
+                            a(href='javascript:void(0)') Сборочно-монтажное оборудование
+                        li
+                            a(href='javascript:void(0)') Оборудование для производства печатных плат
+                        li.parent
+                            a(href='javascript:void(0)') Оборудование для инспекции
+                            span.point
+                            ul.child
+                                li
+                                    a(href='javascript:void(0)') Автоматическая оптическая инспекция печатных плат (АОИ)
+                                li
+                                    a(href='javascript:void(0)') Рентгеновский контроль печатных плат
+                                li
+                                    a(href='javascript:void(0)') Цифровые микроскопы
+                                li
+                                    a(href='javascript:void(0)') Универсальная рабочая станция 3D (после АОИ)
+                                li
+                                    a(href='javascript:void(0)') Автоматическая 3D-инспекция нанесения паяльной пасты (SPI)
+                        li
+                            a(href='javascript:void(0)') Вспомогательное оборудование
+                        li
+                            a(href='javascript:void(0)') Оборудование для обработки кабеля
+                        li
+                            a(href='javascript:void(0)') Оборудование б/у
+                    p.category-page__side-title Комплектующие
+                    ul
+                        li
+                            a(href='javascript:void(0)') Расходные материалы
+                        li
+                            a(href='javascript:void(0)') Запасные части
+                        li
+                            a(href='javascript:void(0)') Питатели
+                        li
+                            a(href='#') Вакуумные питатели
+                nav.category-page__side-nav
+                    p.category-page__side-title Сервис
+                    ul
+                        li
+                            a(href='javascript:void(0)') Техническое обслуживание оборудования
+                        li
+                            a(href='javascript:void(0)') Техническая поддержка и аудит
+                        li
+                            a(href='javascript:void(0)') Изготовление специальных вакуумных захватов
+                        li
+                            a(href='javascript:void(0)') Пуско-наладочные работы и ремонт оборудования
