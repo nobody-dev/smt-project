@@ -1,5 +1,6 @@
 "use strict"
 $(document).ready(function(){
+    //прячет кнопку "подробнее", если у новости нет объемного текста.
     $(".news-block__single").each(function(index, value){
         if($(value).find(".news-block__single-intro").length) {
             $(value).find(".news-block__single-more").show();
@@ -8,6 +9,7 @@ $(document).ready(function(){
         }
     });
 
+    //плавные скроллы
     $(".menu-list").on("click","a", function(event) {
         event.preventDefault();
         var id = $(this).attr('href');
