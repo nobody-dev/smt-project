@@ -2,7 +2,7 @@
   "name": "shop",
   "version": "1.0.0",
   "description": "",
-  "author": "Jenya",
+  "author": "Ivan 'Nobody' Kudriavcev",
   "license": "ISC",
   "dependencies": {
     "bootstrap-sass": "^3.4.1",
